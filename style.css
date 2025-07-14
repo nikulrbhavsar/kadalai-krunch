@@ -22,6 +22,8 @@ header p {
   font-size: 1rem;
   color: #554400;
 }
+
+/* ✅ Product Section */
 .product-section {
   padding: 2rem;
   text-align: center;
@@ -58,6 +60,8 @@ header p {
   font-size: 0.9rem;
   padding: 0 1rem 1rem;
 }
+
+/* ✅ Features Section */
 .features {
   background: #f4f4f4;
   padding: 2rem;
@@ -67,8 +71,7 @@ header p {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-
- .feature-boxes {
+.feature-boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -101,37 +104,57 @@ header p {
   font-size: 1.1rem;
 }
 
+/* ✅ WhatsApp CTA Updated */
 .whatsapp-cta {
-  background: #25d366;
+  background: linear-gradient(to right, #25d366, #128c7e);
   color: white;
   text-align: center;
-  padding: 1.5rem;
+  padding: 2rem 1rem;
 }
-.whatsapp-cta a {
+.cta-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.cta-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.whatsapp-button {
   display: inline-block;
-  background: #128c7e;
-  color: white;
+  background: #fff;
+  color: #128c7e;
+  font-weight: bold;
   text-decoration: none;
   padding: 0.75rem 1.5rem;
   border-radius: 30px;
-  font-weight: bold;
   font-size: 1rem;
+  transition: background 0.3s, color 0.3s;
 }
+.whatsapp-button:hover {
+  background: #f1f1f1;
+  color: #075e54;
+}
+
+/* ✅ Footer Updated */
 footer {
+  background-color: #f2f2f2;
   text-align: center;
   padding: 1rem;
-  background: #eee;
-  font-size: 0.9rem;
-  color: #555;
+  color: #444;
+  font-size: 0.95rem;
 }
+footer strong {
+  color: #e67300;
+}
+
+/* ✅ Responsive */
 @media (max-width: 768px) {
   .products {
     flex-direction: column;
     align-items: center;
   }
-
   .feature-boxes {
     flex-direction: column;
     align-items: center;
   }
-} 
+}
